@@ -1534,8 +1534,8 @@ hr.fancy::before {
 .lead,
 .attention-getter {
 	font-family: var(--font-1);
-	font-size  : var(--text-md);
-	line-height: var(--vspace-1_25);
+	font-size  : var(--text-sm);
+	line-height: var(--vspace-1);
 }
 
 @media screen and (max-width: 800px) {
@@ -2790,7 +2790,7 @@ td:last-child {
 }
 
 .text-display-title {
-	font-size     : var(--text-display-2);
+	font-size     : var(--text-display-1);
 	line-height   : 1.0606;
 	letter-spacing: -0.012em;
 	color         : var(--color-text-dark);
@@ -3143,7 +3143,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1600px) {
 	.grid-section-split__header {
-		grid-column: 1/span 8;
+		grid-column: 1/span 6;
 	}
 
 	.grid-section-split__primary {
@@ -3620,9 +3620,10 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-intro {
-	--content-padding-top   : max(20rem, 18vh);
+	--content-padding-top   : max(16rem, 18vh);
 	--content-padding-bottom: 10.8rem;
-	--content-min-height    : calc(var(--vspace-1) * 27);
+/*	--content-min-height    : calc(var(--vspace-1) * 27);*/
+	--content-min-height    : 100vh;
 	z-index                 : 2;
 	background-color        : var(--color-2);
 /*	background              : linear-gradient(20deg, hsl(130deg, 8%, 14%) 40%, hsl(0deg, 0%, 13%) 100%);*/
@@ -3680,7 +3681,7 @@ td:last-child {
 }
 
 .s-intro__content-title {
-	font-size    : clamp(5rem, 3.5vw, 11.6rem);
+	font-size    : clamp(3em, 3.5vw, 11.6rem);
 	line-height  : 1.2;
 	margin-top   : 0;
 	margin-bottom: var(--vspace-1_25);
@@ -3688,7 +3689,7 @@ td:last-child {
 }
 
 h2.s-intro__content-title {
-	font-size    : clamp(3rem, 3vw, 3.6rem);
+	font-size    : clamp(2rem, 2vw, 3.6rem);
 }
 
 .s-intro__content-media {
@@ -4024,8 +4025,8 @@ h2.s-intro__content-title {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-	padding-top     : var(--vspace-6);
-	padding-bottom  : var(--vspace-6);
+	padding-top     : var(--vspace-4);
+	padding-bottom  : var(--vspace-4);
 	background-color: var(--color-3);
 	color           : var(--color-2);
 }
@@ -4262,6 +4263,11 @@ h2.s-intro__content-title {
     background-blend-mode: overlay;
 }
 
+/*@media screen and (min-width: 1200px) {
+	#clients .grid-section-split__primary {
+		grid-column: 8/span 10;
+	}
+}*/
 .s-clients {
 	padding-top     : var(--vspace-6);
 	padding-bottom  : var(--vspace-4);
@@ -4455,7 +4461,8 @@ h2.s-intro__content-title {
 
 @media screen and (max-width: 1024px) {
     #instagram .feed-container {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
+      gap: 40px;
     }
 }
 
@@ -4463,6 +4470,12 @@ h2.s-intro__content-title {
     text-align: center;
     position: relative;
   	overflow: hidden;
+  	height: fit-content;
+  	box-shadow: 0 60px 20px -50px rgb(0 0 0 / 20%);
+}
+
+#instagram .post > a{
+  display: flex;
 }
 
 #instagram .post .post-caption{
