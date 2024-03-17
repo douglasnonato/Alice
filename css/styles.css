@@ -3341,8 +3341,8 @@ td:last-child {
 		--logo-width: 10rem;
 		top: 0;
 		padding-top : var(--vspace-0_25);
-		background: rgb(72,77,60);
-		background: linear-gradient(0deg, rgba(72,77,60,0) 0%, rgba(72,77,60,1) 100%);
+/*		background: rgb(72,77,60);
+		background: linear-gradient(0deg, rgba(72,77,60,0) 0%, rgba(72,77,60,1) 100%);*/
 	}
 
 	.s-header__inner {
@@ -3451,7 +3451,8 @@ td:last-child {
 
 @media screen and (max-width: 600px) {
 	.s-header__logo {
-		left: calc(var(--gutter) * 2 + 1vw);
+		left: unset;
+    right: calc(var(--gutter)* 2 + 1vw);
 	}
 
 	.s-header__nav a:not(.btn) {
@@ -3843,10 +3844,8 @@ h2.s-intro__content-title {
 		top: 0;
 		width: 100vw;
 		height: 100vh;
-		opacity: .8;
-		background-image: url(../images/alice-cornelio-psicologa-clinica.jpg);
+		background-image: url(../images/alice-cornelio-psicologa-clinica_m.jpg);
 		background-repeat: no-repeat;
-	  background-position: center -10vw;
 	  background-size: 100%;
 	}
 	.s-intro__content-inner {
@@ -3855,7 +3854,7 @@ h2.s-intro__content-title {
 	}
 
 	.s-intro__content-text {
-	    margin-top: 30vh;
+	    margin-top: 33vh;
 	}
 
 	.s-intro__content-text {
@@ -4037,11 +4036,11 @@ h2.s-intro__content-title {
 
 	.s-about__content-imgbg {
 		grid-column: 1/span 4;
-		width      : 60vw;
+		width      : 70vw;
 	}
 	.s-about picture{
-    height: 75vw;
-    width: 60vw;
+    height: 90vw;
+    width: 70vw;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
