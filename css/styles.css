@@ -1924,12 +1924,12 @@ img,
 .ss-loaded #preloader {
 	opacity   : 0;
 	visibility: hidden;
-	transition: all 0.6s 0.9s ease-in-out;
+	transition: all 0.1s 0.3s ease-in-out;
 }
 
 .ss-loaded #preloader #loader {
 	opacity   : 0;
-	transition: opacity 0.6s ease-in-out;
+	transition: opacity 0.1s ease-in-out;
 }
 
 
@@ -3559,14 +3559,14 @@ td:last-child {
  * ------------------------------------------------------------------- */
 .s-intro {
 	--content-padding-top   : max(16rem, 18vh);
-	--content-padding-bottom: 10.8rem;
+	--content-padding-bottom: 5.8rem;
 /*	--content-min-height    : calc(var(--vspace-1) * 27);*/
 	--content-min-height    : 100vh;
 	z-index                 : 2;
 	background-color        : var(--color-2);
 /*	background              : linear-gradient(20deg, hsl(130deg, 8%, 14%) 40%, hsl(0deg, 0%, 13%) 100%);*/
 	width                   : 100%;
-	height                  : max(var(--content-min-height), 100vh);
+/*	height                  : max(var(--content-min-height), 100vh);*/
 	overflow                : hidden;
 	position                : relative;
 /*	background-image: url(../images/texture.png);*/
@@ -3619,7 +3619,7 @@ td:last-child {
 }
 
 .s-intro__content-title {
-	font-size    : clamp(3em, 3.5vw, 11.6rem);
+	font-size    : clamp(2.5em, 3.5vw, 11.6rem);
 	line-height  : 1.2;
 	margin-top   : 0;
 	margin-bottom: var(--vspace-1_25);
@@ -3721,8 +3721,8 @@ h2.s-intro__content-title {
 	display        : flex;
 	justify-content: center;
 	align-items    : center;
-	height         : var(--vspace-1_5);
-	width          : var(--vspace-1_5);
+	height         : var(--vspace-1);
+	width          : var(--vspace-1);
 	border-radius  : 50%;
 	border         : 1px solid var(--color-1);
 	margin-right   : var(--vspace-0_5);
