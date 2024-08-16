@@ -3451,8 +3451,8 @@ td:last-child {
 
 @media screen and (max-width: 600px) {
 	.s-header__logo {
-		left: unset;
-    right: calc(var(--gutter)* 2 + 1vw);
+/*		left: unset;
+    right: calc(var(--gutter)* 2 + 1vw);*/
 	}
 
 	.s-header__nav a:not(.btn) {
