@@ -30,9 +30,9 @@
    * color-4(#dbc7ad) Bege
    */
 	--color-1: hsla(5, 50%, 53%, 1);
-	--color-2: hsla(40, 28%, 87%, 1);
+	--color-2: hsla(23, 40%, 96%, 1);
 	--color-3: hsla(199, 26%, 23%, 1);
-	--color-4: hsla(33,39%,77%,1);
+	--color-4: hsla(40, 28%, 87%, 1);
 
   /* theme color variations
    */
@@ -123,7 +123,7 @@
 
   /* preloader
    */
-	--color-preloader-bg           : var(--color-2-dark);
+	--color-preloader-bg           : var(--color-2);
 	--color-loader                 : var(--color-white);
 	--color-loader-light           : var(--color-2-light);
 
@@ -4520,7 +4520,7 @@ h2.s-intro__content-title {
 #instagram .feed-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
+    gap: 16px;
     margin-top: 40px;
 }
 
@@ -4541,6 +4541,7 @@ h2.s-intro__content-title {
   	overflow: hidden;
   	height: fit-content;
   	box-shadow: 0 60px 20px -50px rgb(0 0 0 / 20%);
+		border-radius: 8px;
 }
 
 #instagram .post > a{
@@ -4556,6 +4557,7 @@ h2.s-intro__content-title {
 	background-color: #182227f7;
 	padding: 30px;
 	transition: .8s;
+	border-radius: 8px;
 }
 
 #instagram .post:hover .post-caption{
