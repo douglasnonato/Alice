@@ -3150,9 +3150,25 @@ td:last-child {
  *
  *
  * ------------------------------------------------------------------- */
+
+.s-header .instagram{
+	display: flex;
+	margin: 0 auto;
+	color: var(--color-3);
+}
+
+.s-header .instagram-icon{
+	content: "";
+	height: 30px;
+	width: 30px;
+	background-image: url(../icons/instagram-dark.svg);
+	display: block;
+	margin-right: 10px;
+}
+
 .s-header {
-	--header-height: 80px;
-	--logo-width   : 17rem;
+	--header-height: 100px;
+	--logo-width   : 24rem;
 	--box-shadow   : 0 1px 1px rgba(0, 0, 0, 0.02),
 		             0 2px 2px rgba(0, 0, 0, 0.02),
 		             0 4px 4px rgba(0, 0, 0, 0.02),
@@ -3162,11 +3178,11 @@ td:last-child {
 		             0 8px 8px rgba(0, 0, 0, 0.03),
 		              16px 16px rgba(0, 0, 0, 0.03);
 	z-index         : 100;
-	background-color: transparent;
+	background-color: var(--color-4);
 	height          : var(--header-height);
 	width           : 100%;
 	position        : absolute;
-	top             : var(--vspace-0_75);
+/*	top             : var(--vspace-0_75);*/
 	left            : 0;
 }
 
@@ -3338,13 +3354,11 @@ td:last-child {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 900px) {
 	.s-header {
-		--logo-width: 10rem;
+		--logo-width: 20rem;
 		top: 0;
 		padding-top : var(--vspace-0_25);
-/*		background: rgb(72,77,60);
-		background: linear-gradient(0deg, rgba(72,77,60,0) 0%, rgba(72,77,60,1) 100%);*/
+		background: transparent;
 	}
-
 	.s-header__inner {
 		width  : 100%;
 		margin : 0;
@@ -3368,10 +3382,14 @@ td:last-child {
 	}
 
 	.s-header__logo {
-		position : absolute;
+/*		position : absolute;
 		left     : calc(var(--gutter) * 2 + 1.5%);
 		top      : 50%;
-		transform: translate(0, -50%);
+		transform: translate(0, -50%);*/
+	}
+		.s-header__logo img{
+		display: block;
+		margin: 0 auto;
 	}
 
 	.s-header__nav {
@@ -3595,7 +3613,7 @@ td:last-child {
 
 .s-intro__content-text {
 	z-index    : 2;
-	grid-column: 1/span 11;
+	grid-column: 1/span 9;
 	margin-top : var(--vspace-1);
 }
 
@@ -3632,7 +3650,7 @@ h2.s-intro__content-title {
 }
 
 .s-intro__content-media {
-	grid-column : 12/-1;
+	grid-column : 10/-2;
 	grid-row    : span 2;
 	justify-self: end;
 	align-self  : center;
@@ -3841,7 +3859,7 @@ h2.s-intro__content-title {
 		content: '';
 		position: absolute;
 		left: 0;
-		top: 0;
+		top: 50px;
 		width: 100vw;
 		height: 100vh;
 		background-image: url(../images/alice-cornelio-psicologa-clinica_m.jpg);
@@ -4105,7 +4123,7 @@ h2.s-intro__content-title {
 }
 
 #beneficios .row .box{
-	width: 32%;
+	width: 40%;
 	background-color: var(--color-white);
 	padding: var(--vspace-1_5);
 	padding-bottom: 20px;
@@ -4123,6 +4141,11 @@ h2.s-intro__content-title {
 
 #beneficios .row .box h4{
 	margin: 0;
+}
+
+#beneficios .row .box h5{
+	margin-top: 0;
+	font-size: var(--text-sm);
 }
 
 #beneficios .row .box p{
@@ -4312,7 +4335,7 @@ h2.s-intro__content-title {
 	background-image: url(../images/logo-simbolo.svg);
   background-repeat: no-repeat;
 	background-size: 64vh;
-  background-position: 0 4vw;
+  background-position: left bottom;
   background-blend-mode: overlay;
 	padding-top     : var(--vspace-4);
 	padding-bottom  : var(--vspace-2);
