@@ -3859,7 +3859,7 @@ h2.s-intro__content-title {
 		content: '';
 		position: absolute;
 		left: 0;
-		top: 50px;
+		/*top: 50px;*/
 		width: 100vw;
 		height: 100vh;
 		background-image: url(../images/alice-cornelio-psicologa-clinica_m.jpg);
